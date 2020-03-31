@@ -226,7 +226,7 @@ header {
     100% {
         background-color: #2a4dc2ee;
         left: calc(95% - 10px);
-        transform: scale(0.5);
+        transform: scale(0.3);
     }
 }
 

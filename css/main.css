@@ -250,6 +250,11 @@ header {
     height: 50%;
     padding: 5px;
     background-size: cover;
+    transition-duration: 2s;
+}
+
+.gallery__item:hover {
+    transform: scale(1.2);
 }
 
 

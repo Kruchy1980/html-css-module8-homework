@@ -64,7 +64,7 @@ header {
 
 @keyframes rotAround {
     0% {
-        transform: none;
+        transform: perspective(150px);
     }
     25% {
         transform: rotate3d(1, 0, 0, 180deg);

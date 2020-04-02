@@ -60,30 +60,23 @@ header {
 .square__item:hover {
     animation-name: rotAround;
     animation-duration: 6s;
-    animation-fill-mode: forwards;
 }
 
 @keyframes rotAround {
     0% {
         transform: none;
     }
-    16.7% {
-        transform: rotateX(90deg);
+    25% {
+        transform: rotate3d(1, 0, 0, 180deg);
     }
-    32.4% {
-        transform: none;
+    50% {
+        transform: rotate3d(0, 0, 1, 180deg);
     }
-    49.1% {
-        transform: rotateY(90deg);
-    }
-    65.8% {
-        transform: none;
-    }
-    82.5% {
-        transform: scale(1.4);
+    75% {
+        transform: rotate3d(0, 0, 1, 180deg) scale(1.4);
     }
     100% {
-        transform: scale(1);
+        transform: rotate3d(0, 0, 1, 180deg) scale(1);
     }
 }
 
@@ -247,7 +240,7 @@ header {
 
 .gallery__item {
     width: 380px;
-    padding: 5px;
+    margin: 10px;
     object-fit: cover;
     transition-duration: 2s;
 }
@@ -264,7 +257,7 @@ header {
         width: 75%;
     }
     .gallery__item {
-        width: 300px;
-        height: 200px;
+        width: 232px;
+        height: 140px;
     }
 }
